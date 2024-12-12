@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form1.css">
+
+    <title>Pharmacy</title>
+</head>
+
+<body>
+
+
+
+	<section id="sidebar">
+		<a href="Index.html" class="brand">
+			<i class='bx bx-plus-medical' ></i>
+			<span class="text">Pharmacy</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="Index.html">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Home</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="medicines.html">
+					<i class='bx bxs-capsule'></i>
+					<span class="text">Medicines</span>
+				</a>
+			</li>
+			<li>
+				<a href="inventory.html">
+					<i class='bx bxs-shopping-bag-alt'></i>
+					<span class="text">My Store</span>
+				</a>
+			</li>
+			
+			<li>
+				<a href="companies.html">
+					<!-- <i class='bx bxs-castle'></i> -->
+					<i class='bx bx-store-alt' ></i>
+					<span class="text">companies</span>
+				</a>
+			</li>
+			<li>
+				<a href="employe.html">
+					<i class='bx bxs-group'></i>
+					<span class="text">Employes
+						
+					</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="profile.html">
+					<i class='bx bxs-cog'></i>
+					<span class="text">Profile</span>
+				</a>
+			</li>
+			<li>
+				<a href="" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+
+
+
+    <section id="content">
+
+        <nav>
+            <i class='bx bx-menu'></i>
+            <a href="#" class="nav-link"></a>
+
+
+            <a href="" class="profile">
+                <img src="people.png">
+            </a>
+        </nav>
+
+        <main>
+            <h1>Manage companies:</h1>
+            <div class="table">
+
+            </div>
+            <div class="one">
+                <div class="row">
+                    <form>
+                        <div class="column">
+                            <!-- <p>
+                               <label for="medid">ID:</label><br>
+                               <input type="number" name="medid">
+                           </p> -->
+                            <p>
+                                <label for="tbuser">Name:</label><br>
+                                <input type="text" name="medname" id="tbuser">
+                            </p>
+                            <p>
+                                <label for="tbuser">product:</label><br>
+                                <input type="text" name="productname"id="tbuser">
+                            </p>
+                            <p>
+                                <label for="tbuser">Type:</label><br>
+                                <input type="text" name="" id="tbuser">
+                               
+                            </p>
+
+                        </div>
+                        <div class="column">
+
+                            <p>
+                                <label for="tbuser">Price:</label><br>
+                                <input type="text"  name="sp"id="tbuser">
+                            </p>
+                            <p>
+                                <label for="tbuser">Salesman Name:</label><br>
+                                <input type="text" name="loc"id="tbuser">
+                            </p>
+                            <p>
+                                <label for="text">Contact no:</label><br>
+                                <input type="text" name="medid"id="tbuser">
+                            </p>
+                        </div>
+
+
+                        <input type="submit" name="add" value="Add " id="btn1">
+                    </form>
+                    <br>
+
+
+
+                </div>
+            </div>
+
+            <div class="table-data" >
+                <div class="order">
+                    <div class="head">
+                        <h3>Listed companies</h3>
+                        <i class='bx bx-search'></i>
+                        <i class='bx bx-filter'></i>
+                    </div>
+                    <table >
+                        <thead>
+                            <tr>
+                                <th>companie Name</th>
+                                <th>Product</th>
+                                <th>Salesman Name</th>
+                                <th>Contact</th>
+                                <th>total product</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+
+                                    <p>sun Pharma</p>
+                                </td>
+                                <td>
+                                    <p>Coldact & Flustat</p>
+                                </td>
+                                <td>
+                                    <p>Nikhil kumar singh</p>
+                                </td>
+                                
+                                <td>9512984782</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <p>Aurobindo Pharma Limited</p>
+                                </td>
+                                <td>
+                                    <p>Proxtle 200mg Tablet</p>
+                                </td>
+                                <td>
+                                    <p>Abdul Mabhood</p>
+                                </td>
+                                
+                                <td>9512347782</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <p>
+
+                                        Cipla</p>
+                                </td>
+                                <td>
+                                    <p> Aceflex Plus 100mg/325mg Tablet</p>
+                                </td>
+                                <td>
+                                    <P>Sunit Bhatt</P>
+                                </td>
+                              
+                                <td>9512354737</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <p>
+                                        mankind pharma</p>
+                                </td>
+                                <td>
+                                    <p>Abevia-N Tablet</p>
+                                </td>
+                                <td>
+                                    <p>Raju Rastogi</p>
+                                </td>
+                               
+                                <td>9512354745</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <p>Ajanta Pharma</p>
+                                </td>
+                                <td>
+                                    <p>Eye drop</p>
+                                </td>
+                                <td>
+                                    <p>Ramesh chauhan </p>
+                                </td>
+                                
+                                <td>9512354782</td>
+                                <td><span class="status available">available</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+        </main>
+
+    </section>
+    <script>
+        
+ const text=document.getElementById('tbuser');
+ const btn1=document.getElementById("btn1");
+ const output=document.getElementById('output');
+
+function fun1(){
+    output.innerHTML=text.value;
+
+} 
+btn1.addEventListener('click',fun1);
+
+
+
+    </script>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

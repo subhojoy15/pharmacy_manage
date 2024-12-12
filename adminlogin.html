@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pharmacy</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script>
+        // console.log("working")
+        function validateForm() {
+            const uname = document.getElementById("uname").value;
+            const pwd = document.getElementById("pwd").value;
+
+            console.log(pwd)
+            if (uname === "subhojoy" && pwd === "subho2004@#") {
+                return true;
+            } else {
+                alert("Invalid username or password! Please try again.");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+
+<body>
+    <div class="header">
+        <h1>PHARMACY</h1>
+        <p style="margin-top:-20px;line-height:1;font-size:30px;">Pharmacy Management System</p>
+    </div>
+
+    <div class="container">
+        <form method="get" action="Index.html" onsubmit="validateForm()">
+            <div id="div_login">
+                <h1>Admin Login</h1>
+                <center>
+                    <div>
+                        <input type="text" class="textbox" id="uname" name="uname" placeholder="Username" />
+                    </div>
+                    <div>
+                        <input type="password" class="textbox" id="pwd" name="pwd" placeholder="Password" />
+                    </div>
+                    <div>
+                        <button type="submit" class="submit-btn">submit
+                           </button>
+                    </div>
+                </center>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <br>
+        @copyright 2024
+        <br><br>
+    </div>
+</body>
+
+</html>

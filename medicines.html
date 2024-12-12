@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form1.css">
+
+	<title>Pharmacy</title>
+</head>
+<body>
+
+
+	
+	
+	<section id="sidebar">
+		<a href="Index.html" class="brand">
+			<i class='bx bx-plus-medical' ></i>
+			<span class="text">Pharmacy</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="Index.html">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Home</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="medicines.html">
+					<i class='bx bxs-capsule'></i>
+					<span class="text">Medicines</span>
+				</a>
+			</li>
+			<li>
+				<a href="inventory.html">
+					<i class='bx bxs-shopping-bag-alt'></i>
+					<span class="text">My Store</span>
+				</a>
+			</li>
+			
+			<li>
+				<a href="companies.html">
+					<!-- <i class='bx bxs-castle'></i> -->
+					<i class='bx bx-store-alt' ></i>
+					<span class="text">companies</span>
+				</a>
+			</li>
+			<li>
+				<a href="employe.html">
+					<i class='bx bxs-group'></i>
+					<span class="text">Employes
+						
+					</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="profile.html">
+					<i class='bx bxs-cog'></i>
+					<span class="text">Profile</span>
+				</a>
+			</li>
+			<li>
+				<a href="adminlogin.html" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+
+	<section id="content">
+
+		<nav>
+			 <i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link"></a>
+		
+			
+			<a href="photos/" class="profile">
+				<img src="people.png">
+			</a>
+		</nav>
+		
+		<main>
+			<h1>Add new Medicines:</h1>
+            <div class="table">
+				
+            </div>
+           <div class="one">
+               <div class="row">
+                   <form >
+                       <div class="column">
+                           <p>
+                               <label for="medid">Medicine ID:</label><br>
+                               <input type="number" name="medid">
+                           </p>
+                           <p>
+                               <label for="medname">Medicine Name:</label><br>
+                               <input type="text" name="medname">
+                           </p>
+                           <p>
+                               <label for="qty">Quantity:</label><br>
+                               <input type="number" name="qty">
+                           </p>
+                           <p>
+                               <label for="cat">Category:</label><br>
+                               <select id="cat" name="cat">
+                                       <option>Tablet</option>
+                                       <option>Capsule</option>
+                                       <option>Syrup</option>
+                               </select>
+                           </p>
+                           
+                       </div>
+                       <div class="column">
+                           
+                           <p>
+                               <label for="sp">Price: </label><br>
+                               <input type="number" step="0.01" name="sp">
+                           </p>
+                           <p>
+                               <label for="loc">Location:</label><br>
+                               <input type="text" name="loc">
+                           </p>
+                       </div>
+                       
+                   
+                   <input type="submit" name="add" value="Add Medicine">
+                   </form>
+               <br>
+               
+               
+           
+               </div>
+           </div>
+
+		   <div class="table-data">
+			<div class="order">
+				<div class="head">
+					<h3>Medicine Inventory</h3>
+					<i class='bx bx-search'></i>
+					<i class='bx bx-filter'></i>
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<th>Medicine Name</th>
+							<th>Medicine ID</th>
+							<th>Medicine Price</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<img src="img/people.png">
+								<p>John Doe</p>
+							</td>
+							<td>01</td>
+							<td>200</td>
+							<td><span class="status available">available</span></td>
+						</tr>
+						<tr>
+							<td>
+								<img src="img/people.png">
+								<p>John Doe</p>
+							</td>
+							<td>02</td>
+							<td>2000</td>
+							<td><span class="status available">available</span></td>
+						</tr>
+						<tr>
+							<td>
+								<img src="img/people.png">
+								<p>John Doe</p>
+							</td>
+							<td>03</td>
+							<td>200</td>
+							<td><span class="status available">available</span></td>
+						</tr>
+						<tr>
+							<td>
+								<img src="img/people.png">
+								<p>John Doe</p>
+							</td>
+							<td>04</td>
+							<td>2000</td>
+							<td><span class="status notavailable">Not available</span></td>
+						</tr>
+						<tr>
+							<td>
+								<img src="img/people.png">
+								<p>Medicine</p>
+							</td>
+							<td>05</td>
+							<td>2000</td>
+							<td><span class="status available">available</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+                   
+		</main>
+
+	</section>
+
+	
+
+	<script src="script.js"></script>
+</body>
+</html>
